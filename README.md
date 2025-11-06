@@ -1,6 +1,8 @@
 Brief Summary
 
+
 This repository contains my final exam submission for the ISYS5000 unit. It demonstrates how I applied key Python programming concepts and debugging techniques from Weeks 1 to 10, following the course’s technical constraints and good coding practices.
+
 
 The tasks required using:
 Input and Output handling (Week 2–3) – using print() and input() for user interaction. 
@@ -27,6 +29,8 @@ Section 4: Creating a complete interactive task manager that combines all learne
 
 Conversation Log: Summarizes my AI-assisted debugging sessions and how I progressively fixed logic errors.
 
+
+
 Important Notes & Constraints:
 
 All solutions only use techniques covered in Weeks 1–10.
@@ -38,6 +42,8 @@ No complex libraries, file persistence, or advanced syntax.
 Error handling kept simple, with clear and consistent printed messages.
 
 Every program focuses on logic clarity, user readability, and correctness.
+
+
 
 Reflection
 
