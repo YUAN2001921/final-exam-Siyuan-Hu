@@ -3,9 +3,12 @@ Brief Summary
 This repository contains my final exam submission for the ISYS5000 unit. It demonstrates how I applied key Python programming concepts and debugging techniques from Weeks 1 to 10, following the course’s technical constraints and good coding practices.
 
 The tasks required using:
-Input and Output handling (Week 2–3) – using print() and input() for user interaction. Variables, Lists, and Dictionaries (Week 4–6) – storing and managing data in memory.
-Conditional Statements and Loops (Week 4–5) – using if/else and while for control flow. Functions with Parameters and Return Values (Week 6–7) – for modular code structure.
-Basic Error Handling with try/except (Week 8) – ensuring simple fault tolerance. Testing and Debugging (Week 9–10) – identifying, analyzing, and fixing code errors.
+Input and Output handling (Week 2–3) – using print() and input() for user interaction. 
+Variables, Lists, and Dictionaries (Week 4–6) – storing and managing data in memory.
+Conditional Statements and Loops (Week 4–5) – using if/else and while for control flow.
+Functions with Parameters and Return Values (Week 6–7) – for modular code structure.
+Basic Error Handling with try/except (Week 8) – ensuring simple fault tolerance. 
+Testing and Debugging (Week 9–10) – identifying, analyzing, and fixing code errors.
 
 Each section focuses on step-by-step problem solving and iterative refinement:
 
