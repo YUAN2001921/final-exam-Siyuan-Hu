@@ -16,6 +16,7 @@ AI also explained that the refinement demonstrates iterative improvement similar
 COURSE CONSTRAINT CHECK:
 AI’s initial draft suggested more advanced syntax; I simplified it to use only lists, loops, and simple functions, consistent with Week 6 functional programming limits.
 
+
 SECTION 1 - PROMPT 2
 
 My prompt:
@@ -26,4 +27,69 @@ AI refined the prompt text for greater specificity. It added requirements to val
 
 COURSE CONSTRAINT CHECK:
 Removed AI’s suggestions about importing modules or using external file storage; final pseudocode remained fully in-memory, aligned with Week 4–6 tools.
+
+
+SECTION 2 - PROMPT 1
+
+My prompt:
+“Here is the buggy code for the Task Manager (broken_task_manager.py). Please identify all errors and explain them clearly.”
+
+AI RESPONSE:
+AI identified six issues:
+Typo fix: len(tas) → len(tasks)
+Add range validation: if 0 <= index < len(tasks)
+Move removed = tasks[index] inside validation
+Correct iteration: for i, t in enumerate(tasks)
+Correct function call: list_task() → list_tasks()
+Keep consistent output messages for invalid or empty lists
+AI provided detailed “where” and “why” reasoning for each fix.
+
+COURSE CONSTRAINT CHECK:
+Followed Week 6 debugging methods—only print and condition-based fixes, no exception or logging modules.
+
+
+SECTION 2 - PROMPT 2
+
+My prompt:
+“This is my corrected code version. Please check if the fixes are correct.”
+
+AI RESPONSE:
+AI reviewed and confirmed that all six errors were corrected. It restated the revised code:
+
+tasks = []
+
+def add_task(task):
+    tasks.append(task)
+    print(f"Added: {task}")
+
+def remove_task(index):
+    if 0 <= index < len(tasks):
+        removed = tasks[index]
+        del tasks[index]
+        print(f"Removed: {removed}")
+    else:
+        print("Invalid index!")
+
+def list_tasks():
+    if not tasks:
+        print("No tasks available.")
+    else:
+        for i, t in enumerate(tasks):
+            print(f"{i+1}: {t}")
+
+def main():
+    add_task("Buy milk")
+    add_task("Pay bills")
+    add_task("Walk dog")
+    list_tasks()
+    remove_task(1)
+    list_tasks()
+
+if __name__ == "__main__":
+    main()
+
+AI confirmed the version is syntactically correct and fully resolves the six detected issues.
+
+COURSE CONSTRAINT CHECK:
+Ensured the solution used only print outputs and in-memory data, consistent with Week 6 lab debugging style.
 
