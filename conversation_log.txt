@@ -93,3 +93,137 @@ AI confirmed the version is syntactically correct and fully resolves the six det
 COURSE CONSTRAINT CHECK:
 Ensured the solution used only print outputs and in-memory data, consistent with Week 6 lab debugging style.
 
+
+SECTION 3 - PROMPT 1
+
+My prompt:
+“Analyze the issues in the function safe_weather_data_fetch(city). Identify the mistakes and relate them to course content.”
+
+AI RESPONSE:
+AI found three main problems:
+Missing input validation for empty city name (Week 6 input validation).
+No safe error handling for failed requests (Week 8).
+Unsafe key access in dictionary (Week 7 nested data validation).
+
+COURSE CONSTRAINT CHECK:
+Kept all AI recommendations within basic Python scope. No use of multiple except blocks or external parsing libraries.
+
+
+SECTION 3 - PROMPT 2
+
+My prompt:
+“Rewrite safe_weather_data_fetch() using only Week 6–8 skills.”
+
+AI RESPONSE:
+AI provided the following code:
+
+import requests
+
+def refined_safe_weather_data_fetch(city):
+    if not city or city.strip() == "":
+        print("Error: City name cannot be empty")
+        return None
+    try:
+        url = f"http://wttr.in/{city}?format=j1"
+        response = requests.get(url)
+        data = response.json()
+        current = data["current_condition"][0]
+        weather_info = {
+            "city": city,
+            "temperature": current["temp_C"],
+            "wind_speed": current["windspeedKmph"],
+            "description": current["weatherDesc"][0]["value"]
+        }
+        return weather_info
+    except:
+        print("Error: Could not connect to weather service")
+        return None
+
+AI explained this version added input validation and basic network error handling.
+
+COURSE CONSTRAINT CHECK:
+Confirmed only one generic try/except block was used and that all error messages were handled through print statements.
+
+
+SECTION 3 - PROMPT 3
+
+My prompt:
+“My code runs correctly but does not display a dialog box. What should I add?”
+
+AI RESPONSE:
+AI advised appending:
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod(verbose=True)
+
+
+and explained that this triggers function verification at runtime.
+
+COURSE CONSTRAINT CHECK:
+This addition followed standard Week 9 execution testing, using only built-in functions.
+
+
+SECTION 4 - PROMPT 1
+
+My prompt:
+“Write the full version of Section 4.1 Task Manager using display_menu(), get_user_choice(), and main(). It should use Week 4–6 logic.”
+
+AI RESPONSE:
+AI provided:
+
+def display_menu():
+    print("1. Add task")
+    print("2. List tasks")
+    print("3. Remove task")
+    print("4. Quit")
+
+def get_user_choice():
+    while True:
+        choice = input("Enter choice (1-4): ")
+        if choice in ["1","2","3","4"]:
+            return int(choice)
+        else:
+            print("Invalid option. Please enter 1–4.")
+
+def main():
+    tasks = []
+    while True:
+        display_menu()
+        choice = get_user_choice()
+        if choice == 1:
+            task = input("Enter new task: ")
+            tasks.append(task)
+            print("Added:", task)
+        elif choice == 2:
+            if not tasks:
+                print("No tasks yet.")
+            else:
+                for i, t in enumerate(tasks):
+                    print(f"{i+1}: {t}")
+        elif choice == 3:
+            if not tasks:
+                print("No tasks to remove.")
+            else:
+                try:
+                    idx = int(input("Enter task number to remove: ")) - 1
+                    if 0 <= idx < len(tasks):
+                        removed = tasks.pop(idx)
+                        print("Removed:", removed)
+                    else:
+                        print("Invalid number.")
+                except:
+                    print("Error: Please enter a valid number.")
+        else:
+            print("Goodbye!")
+            break
+
+if __name__ == "__main__":
+    import doctest
+    doctest.testmod(verbose=True)
+    main()
+
+
+COURSE CONSTRAINT CHECK:
+All functions use print/input and while loops only, consistent with Week 4–6 techniques.
+No persistence or external modules included.
