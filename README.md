@@ -1,50 +1,47 @@
 Brief Summary
 
 
-This repository contains my final exam submission for the ISYS5000 unit. It demonstrates how I applied key Python programming concepts and debugging techniques from Weeks 1 to 10, following the course’s technical constraints and good coding practices.
+This is where I keep my final exam submission to the unit of ISYS5000. It shows how I used the essential principles of Python programming and debugging skills in Weeks 1 to 10 with in view of the technical limitation and good coding principles provided by the course.
 
+The tasks involved the following activities: Input and Output handling (Week 2-3) - interaction with user by means of print and input.
 
-The tasks required using:
-Input and Output handling (Week 2–3) – using print() and input() for user interaction. 
-
-Variables, Lists, and Dictionaries (Week 4–6) – storing and managing data in memory.
+Variables, List, and Dictionaries (Week 4-6)- data storage and management within memory.
 
 Conditional Statements and Loops (Week 4–5) – using if/else and while for control flow.
 
-Functions with Parameters and Return Values (Week 6–7) – for modular code structure.
+Functions - with Parameters and Return Values (Week 6-7) - to have a modular code structure.
 
 Basic Error Handling with try/except (Week 8) – ensuring simple fault tolerance. 
 
-Testing and Debugging (Week 9–10) – identifying, analyzing, and fixing code errors.
+Testing and Debugging (Week 9-10) - the detection, analysis, and correction of bugs in the code.
 
-Each section focuses on step-by-step problem solving and iterative refinement:
+Both sections involve solving problems one step at a time and refining to obsessive-compulsive levels:
 
-Section 1: Prompt refinement for a CLI Task Manager pseudocode using loops and validation.
+Section 1: Bluetooth codification of a pseudocode relating to a CLI Task Manager under use of loops and validation.
 
 Section 2: Debugging and correcting errors with structured logic and print-based validation.
 
 Section 3: Rewriting a Weather Data Fetcher function using safe input validation and single try/except handling.
 
-Section 4: Creating a complete interactive task manager that combines all learned techniques.
+Section 4: Development of a comprehensive interactive task manager by integrating all the techniques learned.
 
-Conversation Log: Summarizes my AI-assisted debugging sessions and how I progressively fixed logic errors.
+Conversation Log: An overview of my experience of using AI during my debugging sessions and how I entered an essential error correction phase by major steps.
 
 
 
 Important Notes & Constraints:
 
-All solutions only use techniques covered in Weeks 1–10.
+Every solution relies on methods that are discussed in Weeks 1-10.
 
-No external modules (except requests for the weather API).
+None of the outside modules (with the exception of the weather API requests).
 
-No complex libraries, file persistence, or advanced syntax.
+None of the complex libraries, file persistence and sophisticated syntax.
 
-Error handling kept simple, with clear and consistent printed messages.
+Handling of errors was also kept simple and consistent printed messages were used.
 
-Every program focuses on logic clarity, user readability, and correctness.
-
+All programs are aimed at logic clarity, user readability and accuracy.
 
 
 Reflection
 
-Learning this unit has been a meaningful journey for me. I started as a beginner with almost no coding experience, but gradually learned how to think logically and understand how code structures work. Through this course, I built confidence in reading, writing, and improving Python programs. Using AI as a learning assistant helped me study more efficiently and understand problems faster, while always keeping my work aligned with course rules. I also sincerely thank my lecturer for the patient and timely guidance throughout the semester, your feedback and explanations made me progress steadily and enjoy learning programming.
+This unit has been an important experience to me. I was a beginner who almost had no experience in code, however, it was possible to learn how to think and learn how code structures work over time. This course gave me the confidence to read, write and enhance Python programs. Studying as an AI learning assistant (ChatGPT) made me more effective and comprehended issues much quicker, so my work was always within the scope of course regulations. I also wish to sincerely thank my lecturer whose patient and timely advice all through the semester made me advance steadily and to learn the programming experience which I enjoyed.
