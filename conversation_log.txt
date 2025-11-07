@@ -99,9 +99,9 @@ Analyze the issues in the function safe_weather_data_fetch(city). Identify the m
 
 AI RESPONSE:
 AI found three main problems:
-Missing input validation for empty city name (Week 6 input validation).
-No safe error handling for failed requests (Week 8).
-Unsafe key access in dictionary (Week 7 nested data validation).
+1. Missing input validation for empty city name (Week 6 input validation).
+2. No safe error handling for failed requests (Week 8).
+3. Unsafe key access in dictionary (Week 7 nested data validation).
 
 COURSE CONSTRAINT CHECK:
 Kept all AI recommendations within basic Python scope. No use of multiple except blocks or external parsing libraries.
@@ -225,5 +225,6 @@ if __name__ == "__main__":
 COURSE CONSTRAINT CHECK:
 All functions use print/input and while loops only, consistent with Week 4–6 techniques.
 No persistence or external modules included.
+
 
 
