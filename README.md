@@ -28,7 +28,6 @@ Section 4: Development of a comprehensive interactive task manager by integratin
 Conversation Log: An overview of my experience of using AI during my debugging sessions and how I entered an essential error correction phase by major steps.
 
 
-
 Important Notes & Constraints:
 
 Every solution relies on methods that are discussed in Weeks 1-10.
