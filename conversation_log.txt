@@ -1,16 +1,15 @@
 SECTION 1 - PROMPT 1
 
 My prompt:
-“The pseudocode for Section 1.1 is as follows:
+The pseudocode for Section 1.1 is as follows:
 Design a CLI Task Manager that lets the user add, list, and remove tasks.
-Please help me write Section 1.2, which requires two prompt refinements.”
+Please help me write Section 1.2, which requires two prompt refinements.
 
 AI RESPONSE:
 AI proposed two refinements for the original pseudocode:
 
-Added explicit planning for validation and structured menu control based on Week 4–6 course logic.
-
-Improved pseudocode layout with proper indentation, parameterized functions, and menu iteration loop.
+1. Added explicit planning for validation and structured menu control based on Week 4–6 course logic.
+2. Improved pseudocode layout with proper indentation, parameterized functions, and menu iteration loop.
 AI also explained that the refinement demonstrates iterative improvement similar to the Week 9 “refinement cycle” approach.
 
 COURSE CONSTRAINT CHECK:
@@ -227,3 +226,4 @@ if __name__ == "__main__":
 COURSE CONSTRAINT CHECK:
 All functions use print/input and while loops only, consistent with Week 4–6 techniques.
 No persistence or external modules included.
+
